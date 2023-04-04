@@ -70,3 +70,40 @@ Enter the first number: 3
 Enter the second number: 4
 12
 ```
+
+## ** Addition of Function of CM  -> M and M -> FT:
+### The functions:
+```commandline
+def cm_m(int1: float):
+    return int1 / 100
+
+
+def m_ft(int1: float) -> float:
+    return int1 * 3.2808399
+```
+
+### Calling the function if user inputs "5" or "6" in the calculator:
+```commandline
+elif operation == "5":
+    int1 = int(input("Enter the number in centimeters to meters:"))
+    print(cm_m(int1))
+
+elif operation == "6":
+    int1 = int(input("Enter the number in meters to feet:"))
+
+    print(m_ft(int1))
+```
+
+### Example output for centimeters to meters:
+```commandline
+1:Addition, 2:Subtraction, 3:Division, 4:Multiplication 5: CM --> M  6: M --> FT 5
+Enter the number in centimeters to meters:100
+1.0
+```
+
+### Example output for meters to feet:
+```commandline
+1:Addition, 2:Subtraction, 3:Division, 4:Multiplication 5: CM --> M  6: M --> FT 6
+Enter the number in meters to feet:150
+492.125985
+```
